@@ -1,6 +1,6 @@
 {
   "name": "string-env-interpolation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Use Environment Variables in String",
   "sideEffects": false,
   "main": "dist/index.cjs.js",
@@ -14,7 +14,8 @@
   "license": "MIT",
   "scripts": {
     "prepublishOnly": "yarn build",
-    "build": "rimraf dist && bob build --single"
+    "build": "rimraf dist && bob build --single",
+    "release": "npm publish dist"
   },
   "devDependencies": {
     "@types/node": "14.0.9",
