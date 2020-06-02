@@ -1,0 +1,25 @@
+{
+  "name": "string-env-interpolation",
+  "version": "1.0.0",
+  "description": "Use Environment Variables in String",
+  "sideEffects": false,
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
+  "typescript": {
+    "definition": "dist/index.d.ts"
+  },
+  "repository": "https://github.com/kamilkisiela/string-env-interpolation",
+  "author": "Kamil Kisiela <kamil.kisiela@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "prepublishOnly": "yarn build",
+    "build": "rimraf dist && bob build --single"
+  },
+  "devDependencies": {
+    "@types/node": "14.0.9",
+    "bob-the-bundler": "1.0.2",
+    "rimraf": "3.0.2",
+    "typescript": "3.9.3"
+  }
+}
